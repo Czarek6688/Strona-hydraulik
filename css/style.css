@@ -1,4 +1,3 @@
-/* ============ VARIABLES ============ */
 :root {
   --bg: #f7f8f6;
   --surface: #ffffff;
@@ -13,7 +12,6 @@
   --font-body: "Inter", sans-serif;
 }
 
-/* ============ RESET / BASE ============ */
 * {
   box-sizing: border-box;
 }
@@ -61,7 +59,6 @@ button {
   padding: 0 30px;
 }
 
-/* shared eyebrow-style section headers (offer/work-range/about/production/contact) */
 .section-header h2 {
   color: var(--teal);
   font-size: 13.5px;
@@ -81,7 +78,6 @@ button {
   max-width: 62ch;
 }
 
-/* ============ NAV ============ */
 .main-nav {
   background: var(--surface);
   border-bottom: 1px solid var(--line);
@@ -149,7 +145,7 @@ button {
     padding: 80px 26px 26px;
     box-shadow: -8px 0 24px rgba(0, 0, 0, 0.12);
   }
-  .open-menu-holder.active {
+  .open-menu-holder.open {
     transform: translateX(0);
   }
   .mobile-close {
@@ -165,7 +161,6 @@ button {
   }
 }
 
-/* ============ HEADER / HERO ============ */
 .main-header {
   padding-top: 70px;
 }
@@ -262,7 +257,6 @@ button {
   }
 }
 
-/* ============ OFFER ============ */
 .offer {
   padding: 96px 0;
 }
@@ -278,9 +272,6 @@ button {
   border-radius: 12px;
   padding: 30px 24px;
   height: 100%;
-  transition:
-    border-color 0.15s ease,
-    transform 0.15s ease;
 }
 .infobox-inner:hover {
   border-color: var(--teal);
@@ -309,7 +300,6 @@ button {
   }
 }
 
-/* ============ WORK RANGE (checklist) ============ */
 .work-range {
   background: var(--surface);
   border-top: 1px solid var(--line);
@@ -362,7 +352,6 @@ button {
   }
 }
 
-/* ============ ABOUT ============ */
 .about {
   padding: 96px 0;
 }
@@ -377,8 +366,7 @@ button {
   column-gap: 30px;
   row-gap: 8px;
 }
-/* nth-of-type matches by tag among siblings of the same tag,
-   so this places each span/h4/p triplet into its own column */
+
 .count span:nth-of-type(1) {
   grid-column: 1;
   grid-row: 1;
@@ -473,7 +461,6 @@ button {
   }
 }
 
-/* ============ PRODUCTION ============ */
 .production {
   background: var(--graphite);
   padding: 90px 0;
@@ -488,9 +475,7 @@ button {
 .production .section-header p {
   color: #a9b4b2;
 }
-/* dodaj tu .gallery-grid z kartami realizacji, kiedy będziesz mieć zdjęcia */
 
-/* ============ CONTACT ============ */
 .contact {
   padding: 96px 0;
 }
@@ -572,7 +557,6 @@ button {
   }
 }
 
-/* ============ FOOTER ============ */
 .page-footer {
   background: var(--graphite);
   color: #9faca9;
